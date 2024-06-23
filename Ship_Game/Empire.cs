@@ -1347,8 +1347,9 @@ namespace Ship_Game
                 Espionage espionage = leecher.GetEspionage(this);
                 if (espionage.CanLeechMoney)
                 {
-                    espionage.AddLeechedMoney(money * 0.02f);
-                    remainingMoney -= money * 0.02f;
+                    float moneyToLeech = money * Espionage.PercentMoneyLeech;
+                    espionage.AddLeechedMoney(moneyToLeech);
+                    remainingMoney -= moneyToLeech;
                 }
             }
 
