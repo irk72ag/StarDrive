@@ -683,7 +683,7 @@ namespace Ship_Game
                 UpdateTimer = 0;
 
             AI = new(this);
-            Research.Update();
+            //Research.Update();
         }
 
         private void CreateThrusterColors()
